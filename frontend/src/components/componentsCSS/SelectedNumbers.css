@@ -1,0 +1,72 @@
+.keno-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
+  padding: 2px;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2px;
+  max-width: 420px;
+  
+}
+
+.number-btn {
+  background-color: #060070;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.number-btn:hover {
+  background-color: #229ed9;
+  color: white;
+}
+
+.number-btn.selected {
+  background-color: #229ed9;
+  color: white;
+  transform: scale(1.05);
+}
+
+.selected-display {
+  margin-top: 1px;
+  margin-left: 20px;
+  background: #eceaea;
+  padding: 5px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.selected-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+.chosen-btn {
+  background-color: #229ed9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.error-msg {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

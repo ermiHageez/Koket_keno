@@ -1,0 +1,76 @@
+.winner-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.winner-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 6px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.winner-btn {
+  background: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 14px;
+  transition: all 0.15s ease;
+  color: #ffffff; /* default text color (white) per request */
+}
+
+/* selected before finalize (neutral highlight) */
+.winner-btn.selected {
+  background-color: #6b7280; /* gray */
+  color: #ffffff;
+  border-color: #565b62;
+}
+
+/* matched = user selected and generated number is same -> green */
+.winner-btn.matched {
+  background-color: #22c55e;
+  color: #ffffff;
+  border-color: #16a34a;
+  transform: scale(1.05);
+}
+
+/* missed = user selected but not in generated draw -> red */
+.winner-btn.missed {
+  background-color: #ef4444;
+  color: #ffffff;
+  border-color: #dc2626;
+  transform: scale(1.02);
+}
+
+/* Keep a distinct button style for the small matched list */
+.match-btn {
+  background-color: #22c55e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+/* Missed picks listing */
+.missed-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+.match-details {
+  margin-top: 12px;
+}
+
+.win-counter {
+  margin-top: 10px;
+  font-size: 18px;
+}

@@ -1,0 +1,39 @@
+/* src/components/componentsCSS/wallet.css */
+.wallet-card {
+  background: #f0f9ff;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.balance-amount {
+  font-size: 1.8rem;
+  color: #0077cc;
+  margin: 5px 0;
+}
+
+.refresh-btn,
+.deposit-btn {
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.card-input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}

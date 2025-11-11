@@ -1,0 +1,135 @@
+/* main.css or game.css */
+/* Lightweight fallback styles to make the UI usable when Tailwind isn't configured.
+   This covers basic colors, spacing and grid behaviors used by the components.
+   You can keep Tailwind for full design; this file is a safe fallback. */
+
+/* :root{
+  --bg-900:#ffffff;
+  --bg-800:#e8eff8;
+  --bg-700:#e3eeff;
+  --slate-300:#ffffff;
+  --slate-400:#ffffff;
+  --white:#ffffff;
+  --emerald-500:#10b981;
+  --amber-500:#f59e0b;
+  --fuchsia-500:#d946ef;
+  --rose-500:#fb7185;
+} */
+/* 
+html,body,#root { height:100%; margin:0; font-family:Inter,system-ui,Arial, sans-serif; background:var(--bg-900); color:var(--white); }
+
+.min-h-full { min-height: 100%; }
+.bg-slate-900 { background: var(--bg-900); }
+.bg-slate-800 { background: var(--bg-800); }
+.bg-slate-700 { background: var(--bg-700); }
+.text-white { color: var(--white); }
+.text-slate-300 { color: var(--slate-300); }
+.text-slate-400 { color: var(--slate-400); }
+.rounded-xl { border-radius: 12px; }
+.rounded-lg { border-radius: 8px; }
+.rounded { border-radius: 6px; }
+.p-4 { padding: 1rem; }
+.p-3 { padding: .75rem; }
+.p-5 { padding: 1.25rem; }
+.p-6 { padding: 1.5rem; }
+.mb-2 { margin-bottom: .5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mt-4 { margin-top: 1rem; }
+.flex { display:flex; }
+.items-center { align-items:center; }
+.justify-center { justify-content:center; }
+.justify-between { justify-content:space-between; }
+.gap-2 { gap:.5rem; }
+.gap-3 { gap:.75rem; }
+.gap-4 { gap:1rem; }
+.grid { display:grid; }
+.grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+.grid-cols-10 { grid-template-columns: repeat(10, 1fr); }
+.grid-cols-1 { grid-template-columns: 1fr; }
+.grid-cols-2 { grid-template-columns: repeat(2,1fr); }
+.grid-rows-15 { grid-auto-rows: 1fr; }
+.aspect-square { aspect-ratio: 1 / 1; }
+.border { border: 1px solid rgba(255,255,255,0.06); }
+.font-bold { font-weight:700; }
+.font-semibold { font-weight:600; }
+.font-mono { font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; }
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 14px; }
+.text-lg { font-size: 18px; }
+.text-2xl { font-size: 24px; }
+.text-3xl { font-size: 30px; }
+.text-4xl { font-size: 36px; }
+.text-6xl { font-size: 48px; }
+.cursor-not-allowed { cursor: not-allowed; opacity: .6; }
+.hover\:brightness-110:hover { filter: brightness(1.10); }
+.bg-emerald-500 { background: var(--emerald-500); }
+.bg-amber-500 { background: var(--amber-500); }
+.bg-fuchsia-500 { background: var(--fuchsia-500); }
+.bg-rose-500 { background: var(--rose-500); } */
+
+/* Buttons used in winner grid / match lists */
+.winner-btn { padding: 8px; border-radius: 6px; background:#2b2b2b; color:var(--white); border:1px solid rgba(255,255,255,0.06); }
+.winner-btn.matched { background: #22c55e !important; color: #000 !important; transform: scale(1.02); }
+.winner-btn.missed { background: #ef4444 !important; color: #fff !important; transform: scale(1.01); }
+
+/* small layout helpers */
+.max-w-4xl { max-width: 85 rem; margin: 0 auto; }
+.max-w-5xl { max-width: 80rem; margin: 0 auto; }
+.p-2 { padding: .5rem; }
+.rounded-full { border-radius: 9999px; }
+.text-center { text-align:center; }
+
+body {
+  margin: 0;
+  padding: 10px 3px;
+  height: 100vh;
+  display: flex;
+  align-items: center;      /* vertically center */
+  justify-content: center;  /* horizontally center */
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(223, 212, 212, 0.9);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #229ED9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1a8cc2;
+}
+
+/* Footer centered at bottom */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: #229ED9;
+  color: white;
+  font-size: 14px;
+}
